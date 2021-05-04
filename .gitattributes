@@ -1,0 +1,19 @@
+# Every time you press return on your keyboard you insert an invisible character called a line ending. 
+# Different operating systems handle line endings differently, this file was added to overcome this issue.
+# https://help.github.com/en/github/using-git/configuring-git-to-handle-line-endings
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.py text
+
+# Declare files that will always have CRLF line endings on checkout (DOS style line ending).
+*.bat text eol=crlf
+
+# Declare files that will always have LF line endings on checkout (UNIX style line ending).
+*.sh text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.bin binary
